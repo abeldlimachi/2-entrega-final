@@ -85,6 +85,7 @@ a, a:active{
     text-transform: uppercase;
     grid-area: df-ul;
     border-radius: 15px;
+    font-size: 15px;
 }
 .df-ul li{
     margin: 10px;
@@ -110,21 +111,14 @@ li a.active, .df-ul a:hover{
 }
 
 .df-ol{
-    background: url(./img/medialunas.jpg);
+    background: url(./img/medialunas.jpg) no-repeat;
     background-size: cover;
-    background-position: center center;
+    
+    
     height: 100vh;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    height: 10px;
-    width: 100%;
-    align-items: stretch;
-    flex-wrap: nowrap;
-    align-content:stretch;
-    list-style: none;
     grid-area: df-ol;
-    padding: 10px;
+    
 }
 .panes{
     background-color: #ae1116; 
@@ -170,7 +164,7 @@ li a.active, .df-ul a:hover{
 .salados:hover{
     background-color: aliceblue;
     transition: all 2s ease;
-}
+}   
 .tortas{background-color: #ae1116; 
     width: 95%;
     height: 20%; 
@@ -253,15 +247,10 @@ li a.active, .df-ul a:hover{
 
 /*FOOTER*/
 .bg-footer{
-    align-self:auto;
     background-color: #891619;
-    text-align:center;
-    bottom: 0;
     width: 100%;
     padding: 20px;
-    position: absolute;
     color: #fff;
-    font-weight: 200;
     display: flex;
     justify-content: space-between;
     grid-area: footer;
@@ -308,20 +297,14 @@ li a.active, .df-ul a:hover{
 
 @media screen and (max-width: 480px){
     .df-ul li{
+        font-size: 15px;
         display: grid;
         line-height: 30px;
         margin: 50px 0;
         transition: all .5s;
     }
 }
-@media screen and (max-width: 480px){
-    .df-ul li a{
-        color: #fff;
-        font-size: 16px;
-        text-transform: uppercase;
-        font-weight: 600;
-    }
-}
+
 @media screen and (max-width: 480px){
     .nav-menu{
         position: fixed;
@@ -334,3 +317,44 @@ li a.active, .df-ul a:hover{
     }
 }
 
+@media (max-width: 952px){
+    .enlace{
+        padding-left: 20px;
+    }
+    .nav ul li a{
+        font-size: 12px;
+    }
+}
+@media (max-width: 610px){
+    .checkbtn{
+        display:block
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #913033;
+        top: 60px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+        transition: all .5s;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, a.active{
+        background: none;
+        color: rgb(221, 184, 184);
+    }
+    #check:checked ~ ul{
+        left: 0;
+        }
+    }
