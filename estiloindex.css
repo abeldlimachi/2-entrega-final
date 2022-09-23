@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz@8..144&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*header index*/
+.df-navbar{ 
+    justify-content:space-around;
+    background: #891619;
+    height: 60px;
+    width: 100%;
+    grid-area: header1;
+}  
+
+.enlace{
+    position:absolute;
+    padding: 20px 50px;
+}
+
+.logo{
+    height: 30px;
+    margin: 0px 10px;
+    
+}
+
+.nosotros{
+    background-image: url(./img/medialunas_argentinas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    position: static;
+    bottom: 0;
+    width: 100%;
+}
+.productos{
+    background-image: url(./img/medialunas_argentinas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    position: static;
+    bottom: 0;
+    width: 100%;
+}
+.serviciosempres{
+    background-image: url(./img/Facturas-de-panaderia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    position: static;
+    bottom: 0;
+    width: 100%;
+}
+
+.contacto{
+    background-image: url(./img/panadería_imagen.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    position: static;
+    bottom: 0;
+    width: 100%;
+}
+
+a, a:active{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.df-ul{
+    float: right;
+    margin-right: 20px;
+    display: flex;
+    list-style: none;
+    text-transform: uppercase;
+    grid-area: df-ul;
+    border-radius: 15px;
+}
+.df-ul li{
+    margin: 10px;
+    
+}
+
+li a.active, .df-ul a:hover{
+    background-color: #fff;
+    color: black;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color:#fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+.df-ol{
+    background: url(./img/medialunas.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 10px;
+    width: 100%;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    align-content:stretch;
+    list-style: none;
+    grid-area: df-ol;
+    padding: 10px;
+}
+.panes{
+    background-color: #ae1116; 
+    width: 95%;
+    height: 20%; 
+    padding: 25px; 
+    margin: 8px;
+    background-origin:border-box;
+    text-align: center;
+    align-items:baseline;
+    grid-area: panes;
+}
+.panes:hover{
+    background-color: aliceblue;
+    transition: all 2s ease;
+}
+.dulces{background-color: #ae1116; 
+    width: 95%;
+    height: 20%; 
+    padding: 25px; 
+    margin: 8px;
+    background-origin:border-box;
+    text-align: center;
+    align-items:baseline;
+    grid-area: dulces;
+}
+
+.dulces:hover{
+        background-color: aliceblue;
+        transition: all 2s ease;
+}
+.salados{background-color: #ae1116; 
+    width: 95%;
+    height: 20%; 
+    padding: 25px; 
+    margin: 8px;
+    background-origin:border-box;
+    text-align: center;
+    align-items:baseline;
+    grid-area: salados;
+}
+
+.salados:hover{
+    background-color: aliceblue;
+    transition: all 2s ease;
+}
+.tortas{background-color: #ae1116; 
+    width: 95%;
+    height: 20%; 
+    padding: 25px; 
+    margin: 8px;
+    background-origin:border-box;
+    text-align: center;
+    align-items:baseline;
+    grid-area: tortas;
+}
+
+.tortas:hover{
+    background-color: aliceblue;
+    transition: all 2s ease;
+}
+
+.masas{background-color: #ae1116; 
+    width: 95%;
+    height: 20%; 
+    padding: 25px; 
+    margin: 8px;
+    background-origin:border-box;
+    text-align: center;
+    align-items:baseline;
+    grid-area: masas;    
+}
+
+.masas:hover{
+    background-color: aliceblue;
+    transition: all 2s ease;
+}
+.bombones{background-color: #ae1116; 
+    width: 95%;
+    height: 20%; 
+    padding: 25px; 
+    margin: 8px;
+    background-origin:border-box;
+    text-align: center;
+    align-items:baseline;
+    grid-area: bombones;
+}
+
+.bombones:hover{
+    background-color: aliceblue;
+    transition: all 2s ease;
+}
+
+/*MAIN*/
+
+.nosotros.df-navbar{ 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    background-color: #891619;
+    color: #fff;
+    padding: 15px;
+
+    grid-area: header2;
+    float: left;
+
+}  
+
+.df-ol {
+    margin: -0%;
+    justify-content: space-around;
+    height: 30%;
+    padding: 10%;
+    width: 100%;
+    text-transform: uppercase;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows:repeat(2,auto);
+    grid-template-areas: 
+    "panes  dulces  salados"
+    "tortas masas   bombones"
+    ;
+}
+
+
+/*FOOTER*/
+.bg-footer{
+    align-self:auto;
+    background-color: #891619;
+    text-align:center;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    position: absolute;
+    color: #fff;
+    font-weight: 200;
+    display: flex;
+    justify-content: space-between;
+    grid-area: footer;
+}
+.redes{
+    height: 40px;
+    margin: 0px 60px;
+
+}
+.bg-footer-nosotros{
+    background-color: #891619;
+    text-align:left;
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 1em;
+    color: #fff;
+    font-weight: 100;
+    bottom: 0;
+
+}
+
+
+@media screen and (max-width: 500px ){
+    .df-ol{        
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        justify-content: auto;
+        grid-template-areas: 
+        "df-navbar  df-navbar"
+        "panes panes"
+        "dulces dulces"
+        "salados    salados"
+        "tortas tortas"
+        "masas  masas"
+        "bombones   bombones"
+        "footer footer"
+        ;
+    }
+    
+}
+
+@media screen and (max-width: 480px){
+    .df-ul li{
+        display: grid;
+        line-height: 30px;
+        margin: 50px 0;
+        transition: all .5s;
+    }
+}
+@media screen and (max-width: 480px){
+    .df-ul li a{
+        color: #fff;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+}
+@media screen and (max-width: 480px){
+    .nav-menu{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 100px;
+        background: rgba(0, 0, 0 , .95);
+        text-align: center;
+        transition: all .5s;
+    }
+}
+
