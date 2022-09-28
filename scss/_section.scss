@@ -1,0 +1,117 @@
+.df-ol{
+    background: url(./img/medialunas.jpg) no-repeat;
+    background-size: cover;
+    grid-area: df-ol;
+    top:70px;
+    
+}
+.panes{
+    background-color: #ae1116; 
+    width: 95%;
+    height: 10%; 
+    padding: 25px; 
+    margin: 8px;
+    background-origin:border-box;
+    text-align: center;
+    align-items:baseline;
+    grid-area: panes;
+}
+.panes:hover{
+    background-color: aliceblue;
+    transition: all 2s ease;
+}
+.dulces{background-color: #ae1116; 
+    width: 95%;
+    height: 20%; 
+    padding: 25px; 
+    margin: 8px;
+    background-origin:border-box;
+    text-align: center;
+    align-items:baseline;
+    grid-area: dulces;
+}
+
+.dulces:hover{
+        background-color: aliceblue;
+        transition: all 2s ease;
+}
+.salados{background-color: #ae1116; 
+    width: 95%;
+    height: 20%; 
+    padding: 25px; 
+    margin: 8px;
+    background-origin:border-box;
+    text-align: center;
+    align-items:baseline;
+    grid-area: salados;
+}
+
+.salados:hover{
+    background-color: aliceblue;
+    transition: all 2s ease;
+}   
+.tortas{background-color: #ae1116; 
+    width: 95%;
+    height: 20%; 
+    padding: 25px; 
+    margin: 8px;
+    background-origin:border-box;
+    text-align: center;
+    align-items:baseline;
+    grid-area: tortas;
+}
+
+.tortas:hover{
+    background-color: aliceblue;
+    transition: all 2s ease;
+}
+
+.masas{background-color: #ae1116; 
+    width: 95%;
+    height: 20%; 
+    padding: 25px; 
+    margin: 8px;
+    background-origin:border-box;
+    text-align: center;
+    align-items:baseline;
+    grid-area: masas;    
+}
+
+.masas:hover{
+    background-color: aliceblue;
+    transition: all 2s ease;
+}
+.bombones{background-color: #ae1116; 
+    width: 95%;
+    height: 20%; 
+    padding: 25px; 
+    margin: 8px;
+    background-origin:border-box;
+    text-align: center;
+    align-items:baseline;
+    grid-area: bombones;
+}
+
+.bombones:hover{
+    background-color: aliceblue;
+    transition: all 2s ease;
+}
+
+
+
+.df-ol {
+    margin: -0%;
+    justify-content: space-around;
+    height: 30%;
+    padding: 10%;
+    width: 100%;
+    text-transform: uppercase;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows:repeat(2,auto);
+    grid-template-areas: 
+    "panes  dulces  salados"
+    "tortas masas   bombones"
+    ;
+}
+

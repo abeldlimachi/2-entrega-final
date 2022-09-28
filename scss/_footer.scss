@@ -1,0 +1,27 @@
+/*FOOTER*/
+.bg-footer{
+    background-color: #891619;
+    width: 100%;
+    padding: 20px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    grid-area: footer;
+}
+.redes{
+    height: 40px;
+    margin: 0px 60px;
+
+}
+.bg-footer-nosotros{
+    background-color: #891619;
+    text-align:left;
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 1em;
+    color: #fff;
+    font-weight: 100;
+    bottom: 0;
+
+}
