@@ -1,3 +1,11 @@
+$bg1: #aliceblue;
+$bg2: #aqua;
+$bg3: rgb(157, 131, 131);
+$bg4: aquamarine;
+$bg5: azure;
+$bg6: cadetblue;
+
+
 .df-ol{
     background: url(./img/medialunas.jpg) no-repeat;
     background-size: cover;
@@ -5,7 +13,8 @@
     top:70px;
     
 }
-.panes{
+/*panes*/
+.caja1{
     background-color: #ae1116; 
     width: 95%;
     height: 10%; 
@@ -16,11 +25,18 @@
     align-items:baseline;
     grid-area: panes;
 }
-.panes:hover{
-    background-color: aliceblue;
+
+@mixin caja ($fondo){
+    background-color: $fondo;
+    
+}
+.caja1:hover{
+    @include caja($bg1);
+    /*background-color: aliceblue;*/
     transition: all 2s ease;
 }
-.dulces{background-color: #ae1116; 
+/*dulces*/
+.caja2{background-color: #ae1116; 
     width: 95%;
     height: 20%; 
     padding: 25px; 
@@ -31,11 +47,13 @@
     grid-area: dulces;
 }
 
-.dulces:hover{
-        background-color: aliceblue;
+.caja2:hover{
+        @include caja($bg2);
+        /*background-color: aliceblue*/;
         transition: all 2s ease;
 }
-.salados{background-color: #ae1116; 
+/*salados*/
+.caja3{background-color: #ae1116; 
     width: 95%;
     height: 20%; 
     padding: 25px; 
@@ -46,11 +64,14 @@
     grid-area: salados;
 }
 
-.salados:hover{
-    background-color: aliceblue;
+.caja3:hover{
+    @include caja($bg3);
+   /* background-color: aliceblue;*/
     transition: all 2s ease;
 }   
-.tortas{background-color: #ae1116; 
+/*tortas*/
+.caja4{
+    background-color: #ae1116; 
     width: 95%;
     height: 20%; 
     padding: 25px; 
@@ -61,12 +82,15 @@
     grid-area: tortas;
 }
 
-.tortas:hover{
-    background-color: aliceblue;
+.caja4:hover{
+    @include caja($bg4);
+    /*background-color: aliceblue;*/
     transition: all 2s ease;
 }
 
-.masas{background-color: #ae1116; 
+/*masas*/
+.caja5{
+    background-color: #ae1116; 
     width: 95%;
     height: 20%; 
     padding: 25px; 
@@ -77,11 +101,14 @@
     grid-area: masas;    
 }
 
-.masas:hover{
-    background-color: aliceblue;
+.caja5:hover{
+    @include caja($bg5);
+    /*background-color: aliceblue;*/
     transition: all 2s ease;
 }
-.bombones{background-color: #ae1116; 
+/*bombones*/
+.caja6{
+    background-color: #ae1116; 
     width: 95%;
     height: 20%; 
     padding: 25px; 
@@ -92,8 +119,9 @@
     grid-area: bombones;
 }
 
-.bombones:hover{
-    background-color: aliceblue;
+.caja6:hover{
+    @include caja($bg6);
+    /*background-color: aliceblue;*/
     transition: all 2s ease;
 }
 

@@ -197,7 +197,8 @@ li a.active, .menu a:hover {
   grid-area: df-ol;
   top: 70px; }
 
-.panes {
+/*panes*/
+.caja1 {
   background-color: #ae1116;
   width: 95%;
   height: 10%;
@@ -208,11 +209,13 @@ li a.active, .menu a:hover {
   align-items: baseline;
   grid-area: panes; }
 
-.panes:hover {
-  background-color: aliceblue;
+.caja1:hover {
+  background-color: #aliceblue;
+  /*background-color: aliceblue;*/
   transition: all 2s ease; }
 
-.dulces {
+/*dulces*/
+.caja2 {
   background-color: #ae1116;
   width: 95%;
   height: 20%;
@@ -223,11 +226,13 @@ li a.active, .menu a:hover {
   align-items: baseline;
   grid-area: dulces; }
 
-.dulces:hover {
-  background-color: aliceblue;
+.caja2:hover {
+  background-color: #aqua;
+  /*background-color: aliceblue*/
   transition: all 2s ease; }
 
-.salados {
+/*salados*/
+.caja3 {
   background-color: #ae1116;
   width: 95%;
   height: 20%;
@@ -238,11 +243,13 @@ li a.active, .menu a:hover {
   align-items: baseline;
   grid-area: salados; }
 
-.salados:hover {
-  background-color: aliceblue;
+.caja3:hover {
+  background-color: #9d8383;
+  /* background-color: aliceblue;*/
   transition: all 2s ease; }
 
-.tortas {
+/*tortas*/
+.caja4 {
   background-color: #ae1116;
   width: 95%;
   height: 20%;
@@ -253,11 +260,13 @@ li a.active, .menu a:hover {
   align-items: baseline;
   grid-area: tortas; }
 
-.tortas:hover {
-  background-color: aliceblue;
+.caja4:hover {
+  background-color: aquamarine;
+  /*background-color: aliceblue;*/
   transition: all 2s ease; }
 
-.masas {
+/*masas*/
+.caja5 {
   background-color: #ae1116;
   width: 95%;
   height: 20%;
@@ -268,11 +277,13 @@ li a.active, .menu a:hover {
   align-items: baseline;
   grid-area: masas; }
 
-.masas:hover {
-  background-color: aliceblue;
+.caja5:hover {
+  background-color: azure;
+  /*background-color: aliceblue;*/
   transition: all 2s ease; }
 
-.bombones {
+/*bombones*/
+.caja6 {
   background-color: #ae1116;
   width: 95%;
   height: 20%;
@@ -283,8 +294,9 @@ li a.active, .menu a:hover {
   align-items: baseline;
   grid-area: bombones; }
 
-.bombones:hover {
-  background-color: aliceblue;
+.caja6:hover {
+  background-color: cadetblue;
+  /*background-color: aliceblue;*/
   transition: all 2s ease; }
 
 .df-ol {
