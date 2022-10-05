@@ -15,7 +15,8 @@ body {
   color: #fff;
   display: flex;
   justify-content: space-between;
-  grid-area: footer; }
+  grid-area: footer;
+  color: cadetblue; }
 
 .redes {
   height: 40px;
@@ -210,7 +211,7 @@ li a.active, .menu a:hover {
   grid-area: panes; }
 
 .caja1:hover {
-  background-color: #aliceblue;
+  background-color: aliceblue;
   /*background-color: aliceblue;*/
   transition: all 2s ease; }
 
@@ -227,7 +228,7 @@ li a.active, .menu a:hover {
   grid-area: dulces; }
 
 .caja2:hover {
-  background-color: #aqua;
+  background-color: aqua;
   /*background-color: aliceblue*/
   transition: all 2s ease; }
 
