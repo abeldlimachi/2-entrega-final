@@ -2,10 +2,12 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
 /*FOOTER*/
 .bg-footer {
@@ -15,24 +17,27 @@ body {
   color: #fff;
   display: flex;
   justify-content: space-between;
-  grid-area: footer; }
+  grid-area: footer;
+}
+
+.bg-footer-contactos {
+  background-color: #891619;
+  width: 100%;
+  padding: 20px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  grid-area: footer;
+}
 
 .redes {
   height: 40px;
-  margin: 0px 60px; }
-
-/*color de los logos de ig, wsp y fb color blanco*/
-.fa-facebook-square {
-  color: #fff; }
-
-.fa-whatsapp {
-  color: #fff; }
-
-.fa-instagram {
-  color: #fff; }
+  margin: 0px 60px;
+}
 
 .redes-contacto {
-  text-align: justify; }
+  text-align: justify;
+}
 
 .bg-footer-nosotros {
   background-color: #891619;
@@ -41,7 +46,8 @@ body {
   padding: 20px;
   color: #fff;
   display: flex;
-  grid-area: footer; }
+  grid-area: footer;
+}
 
 .bg-footer-productos {
   background-color: #891619;
@@ -50,8 +56,8 @@ body {
   color: #fff;
   display: flex;
   justify-content: space-between;
-  display: flex;
-  grid-area: footer; }
+  grid-area: footer;
+}
 
 .bg-footer-contactos {
   background-color: #891619;
@@ -63,20 +69,23 @@ body {
   color: #fff;
   font-weight: 100;
   bottom: 0;
-  margin-top: auto; }
+  top: 60px;
+}
 
 /*header index*/
 .nav {
   background: #891619;
-  height: 80px;
+  height: 60px;
   width: 100%;
   padding: 10px;
-  font-size: 12px; }
+  font-size: 12px;
+}
 
 /*ubicacion del logo*/
 .enlace {
   position: absolute;
-  padding: 15px 50px; }
+  padding: 15px 50px;
+}
 
 /* logo */
 .logo {
@@ -84,12 +93,14 @@ body {
   margin: 0px 20px;
   padding: 0px 60px;
   text-align: center;
-  margin-top: 0px; }
+  margin-top: 0px;
+}
 
 li a.active, li a:hover {
   background: #fff;
-  color: #c01c1c;
-  transition: .5s; }
+  color: rgb(192, 28, 28);
+  transition: 0.5s;
+}
 
 /*fondo de pantalla de index*/
 .index {
@@ -97,7 +108,8 @@ li a.active, li a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   top: 70px;
-  background-position: center; }
+  background-position: center;
+}
 
 /*fondo de pantalla de nosotros html*/
 .nosotros {
@@ -108,7 +120,8 @@ li a.active, li a:hover {
   height: 600px;
   position: static;
   bottom: 0;
-  width: 100%; }
+  width: 100%;
+}
 
 /*fondo de pantalla de productos html*/
 .productos {
@@ -119,7 +132,8 @@ li a.active, li a:hover {
   height: 600px;
   position: static;
   bottom: 0;
-  width: 100%; }
+  width: 100%;
+}
 
 /*fondo de pantalla de servicios empresas html*/
 .serviciosempres {
@@ -130,7 +144,8 @@ li a.active, li a:hover {
   height: 600px;
   position: static;
   bottom: 0;
-  width: 100%; }
+  width: 100%;
+}
 
 /*fondo de pantalla de contacto html*/
 .contacto {
@@ -139,10 +154,12 @@ li a.active, li a:hover {
   background-size: cover;
   background-position: center;
   height: 600px;
-  width: 100%; }
+  width: 100%;
+}
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 .menu {
   float: right;
@@ -152,7 +169,8 @@ a {
   text-transform: uppercase;
   border-radius: 15px;
   position: relative;
-  justify-content: space-around; }
+  justify-content: space-around;
+}
 
 .menu li a {
   margin: 0px;
@@ -161,12 +179,14 @@ a {
   color: #fff;
   padding: 20px;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+}
 
 /*cuando paso con el mouse en las opciones de nav, el color de cada alternativa cambia */
 li a.active, .menu a:hover {
   background-color: #fff;
-  color: #5e0b0b; }
+  color: rgb(94, 11, 11);
+}
 
 .checkbtn {
   font-size: 30px;
@@ -175,10 +195,12 @@ li a.active, .menu a:hover {
   line-height: 80px;
   margin-right: 40px;
   cursor: pointer;
-  display: none; }
+  display: none;
+}
 
 #check {
-  display: none; }
+  display: none;
+}
 
 /*MAIN*/
 .nosotros.df-navbar {
@@ -189,13 +211,15 @@ li a.active, .menu a:hover {
   background-color: #891619;
   color: #fff;
   padding: 15px;
-  float: left; }
+  float: left;
+}
 
 .df-ol {
   background: url(./img/medialunas.jpg) no-repeat;
   background-size: cover;
   grid-area: df-ol;
-  top: 70px; }
+  top: 70px;
+}
 
 .panes {
   background-color: #ae1116;
@@ -206,11 +230,13 @@ li a.active, .menu a:hover {
   background-origin: border-box;
   text-align: center;
   align-items: baseline;
-  grid-area: panes; }
+  grid-area: panes;
+}
 
 .panes:hover {
   background-color: aliceblue;
-  transition: all 2s ease; }
+  transition: all 2s ease;
+}
 
 .dulces {
   background-color: #ae1116;
@@ -221,11 +247,13 @@ li a.active, .menu a:hover {
   background-origin: border-box;
   text-align: center;
   align-items: baseline;
-  grid-area: dulces; }
+  grid-area: dulces;
+}
 
 .dulces:hover {
   background-color: aliceblue;
-  transition: all 2s ease; }
+  transition: all 2s ease;
+}
 
 .salados {
   background-color: #ae1116;
@@ -236,11 +264,13 @@ li a.active, .menu a:hover {
   background-origin: border-box;
   text-align: center;
   align-items: baseline;
-  grid-area: salados; }
+  grid-area: salados;
+}
 
 .salados:hover {
   background-color: aliceblue;
-  transition: all 2s ease; }
+  transition: all 2s ease;
+}
 
 .tortas {
   background-color: #ae1116;
@@ -251,11 +281,13 @@ li a.active, .menu a:hover {
   background-origin: border-box;
   text-align: center;
   align-items: baseline;
-  grid-area: tortas; }
+  grid-area: tortas;
+}
 
 .tortas:hover {
   background-color: aliceblue;
-  transition: all 2s ease; }
+  transition: all 2s ease;
+}
 
 .masas {
   background-color: #ae1116;
@@ -266,11 +298,13 @@ li a.active, .menu a:hover {
   background-origin: border-box;
   text-align: center;
   align-items: baseline;
-  grid-area: masas; }
+  grid-area: masas;
+}
 
 .masas:hover {
   background-color: aliceblue;
-  transition: all 2s ease; }
+  transition: all 2s ease;
+}
 
 .bombones {
   background-color: #ae1116;
@@ -281,14 +315,16 @@ li a.active, .menu a:hover {
   background-origin: border-box;
   text-align: center;
   align-items: baseline;
-  grid-area: bombones; }
+  grid-area: bombones;
+}
 
 .bombones:hover {
   background-color: aliceblue;
-  transition: all 2s ease; }
+  transition: all 2s ease;
+}
 
 .df-ol {
-  margin: -0%;
+  margin: 0%;
   justify-content: space-around;
   height: 30%;
   padding: 10%;
@@ -297,7 +333,8 @@ li a.active, .menu a:hover {
   display: grid;
   grid-template-columns: repeat(3, auto);
   grid-template-rows: repeat(2, auto);
-  grid-template-areas: "panes  dulces  salados" "tortas masas   bombones"; }
+  grid-template-areas: "panes  dulces  salados" "tortas masas   bombones";
+}
 
 @media screen and (max-width: 500px) {
   .df-ol {
@@ -306,16 +343,18 @@ li a.active, .menu a:hover {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(8, 2fr);
     justify-content: auto;
-    grid-template-areas: "df-navbar  df-navbar" "panes panes" "dulces dulces" "salados    salados" "tortas tortas" "masas  masas" "bombones   bombones" "footer footer"; } }
-
+    grid-template-areas: "df-navbar  df-navbar" "panes panes" "dulces dulces" "salados    salados" "tortas tortas" "masas  masas" "bombones   bombones" "footer footer";
+  }
+}
 @media screen and (max-width: 480px) {
   .menu li {
     font-size: 15px;
     display: grid;
     line-height: 30px;
     margin: 50px 0;
-    transition: all .5s; } }
-
+    transition: all 0.5s;
+  }
+}
 @media screen and (max-width: 480px) {
   .ul {
     position: fixed;
@@ -324,64 +363,76 @@ li a.active, .menu a:hover {
     top: 100px;
     background: rgba(0, 0, 0, 0.95);
     text-align: center;
-    transition: all .5s; } }
-
+    transition: all 0.5s;
+  }
+}
 @media (max-width: 952px) {
   .enlace {
-    padding-left: 0px; }
+    padding-left: 0px;
+  }
   .logo {
     padding-left: 40px;
     margin-left: 10px;
-    margin-top: 5px; }
+    margin-top: 5px;
+  }
   .nav ul li a {
-    font-size: 12px; } }
-
+    font-size: 12px;
+  }
+}
 @media (max-width: 720px) {
   .enlace {
-    padding-left: 20px; }
+    padding-left: 20px;
+  }
   .logo {
-    padding-left: 30px; }
+    padding-left: 30px;
+  }
   .checkbtn {
-    display: block; }
-  .df-ol {
-    font-size: 10px;
-    width: 300px; }
-  .index {
-    height: 550px; }
+    display: block;
+  }
   .menu {
     display: block;
     flex-direction: column;
     position: absolute;
-    width: 100%;
+    width: 100px;
     height: 100vh;
     background: #913033;
-    margin-top: 78px;
+    margin-top: 30px;
     left: 100%;
     text-align: center;
-    transition: all .5s; }
+    transition: all 0.5s;
+  }
   .menu li {
     display: block;
     margin: 50px 0;
-    line-height: 40px; }
+    line-height: 40px;
+  }
   .logo {
-    margin-top: 0px; }
+    margin-top: 0px;
+  }
   .checkbtn {
-    margin-top: -8px; }
+    margin-top: -8px;
+  }
   .df-ol {
     margin-top: 30px;
     padding-top: 10%;
     display: block;
-    height: 10px; }
+    height: 10px;
+  }
   .df-navbar {
-    padding: 0%; }
+    padding: 0%;
+  }
   nav ul li a {
     font-size: 20px;
-    line-height: 5px; }
+    line-height: 5px;
+  }
   li a:hover, li a.active {
     background: none;
-    color: #fff; }
+    color: #fff;
+  }
   #check:checked ~ ul {
-    left: 0; } }
-
+    left: 0;
+  }
+}
 .active {
-  background-color: none; }
+  background-color: none;
+}/*# sourceMappingURL=style.css.map */
